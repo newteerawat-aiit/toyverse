@@ -1,203 +1,151 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>ToyVerse | Graph</title>
-
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToyVerse | Graph Theory</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
+  <div class="logo">ToyVerse</div>
 
-    <div class="logo">
-        🧸 ToyVerse
-    </div>
-
-    <nav>
-
-        <a href="index.html">
-            หน้าหลัก
-        </a>
-
-        <a href="products.html">
-            สินค้า
-        </a>
-
-        <a class="active" href="graph.html">
-            Toy Graph
-        </a>
-
-        <a href="tree.html">
-            Toy Tree
-        </a>
-
-    </nav>
-
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="products.html">สินค้า</a>
+    <a href="graph.html" class="active">Graph</a>
+    <a href="tree.html">Tree</a>
+  </nav>
 </header>
 
+<main class="graph-page">
 
-<main>
+  <section class="page-header">
+    <p class="tag">DISCRETE MATHEMATICS</p>
+    <h1>Graph Theory</h1>
+    <p>
+      แสดงความสัมพันธ์ระหว่างร้าน หมวดหมู่ และสินค้า
+      ในรูปแบบ Graph
+    </p>
+  </section>
 
-    <section class="page-title">
+  <section class="graph-info">
 
-        <span class="badge">
-            Graph Theory
-        </span>
+    <div class="info-card">
+      <strong>Vertex</strong>
+      <span>จุดยอดของกราฟ</span>
+    </div>
 
-        <h1>
-            Toy Graph
-        </h1>
+    <div class="info-card">
+      <strong>Edge</strong>
+      <span>เส้นเชื่อมระหว่าง Vertex</span>
+    </div>
 
-        <p>
-            กราฟแสดงความสัมพันธ์ระหว่างหมวดหมู่กับสินค้า
-        </p>
+    <div class="info-card">
+      <strong>Path</strong>
+      <span>เส้นทางระหว่างจุดต่าง ๆ</span>
+    </div>
 
-    </section>
+  </section>
 
+  <section class="graph-card">
 
-    <div class="math-box">
+    <div class="section-title">
+      <div>
+        <p class="tag">NETWORK GRAPH</p>
+        <h2>ความสัมพันธ์ของ ToyVerse</h2>
+      </div>
 
-        <h2>
-            องค์ประกอบของ Graph
-        </h2>
+      <span class="counter">
+        9 Vertices · 9 Edges
+      </span>
+    </div>
 
-        <p>
-            <b>Vertex:</b>
-            จุดยอด เช่น หมวดหมู่หรือสินค้า
-        </p>
+    <div class="network">
 
-        <p>
-            <b>Edge:</b>
-            เส้นเชื่อมระหว่าง Vertex
-        </p>
+      <!-- เส้นเชื่อม -->
+      <svg viewBox="0 0 900 500">
 
-        <p>
-            <b>Path:</b>
-            เส้นทางที่เดินผ่าน Vertex และ Edge
-        </p>
+        <!-- Toy Store → Categories -->
+        <line x1="450" y1="80" x2="220" y2="220"></line>
+        <line x1="450" y1="80" x2="450" y2="220"></line>
+        <line x1="450" y1="80" x2="680" y2="220"></line>
+
+        <!-- Robot -->
+        <line x1="220" y1="220" x2="120" y2="390"></line>
+        <line x1="220" y1="220" x2="300" y2="390"></line>
+
+        <!-- Blocks -->
+        <line x1="450" y1="220" x2="450" y2="390"></line>
+        <line x1="450" y1="220" x2="550" y2="390"></line>
+
+        <!-- Cars -->
+        <line x1="680" y1="220" x2="780" y2="390"></line>
+
+        <!-- Extra relationship -->
+        <line x1="300" y1="390" x2="450" y2="390"></line>
+
+      </svg>
+
+      <!-- Vertex -->
+      <div class="node store">Toy Store</div>
+
+      <div class="node robot">Robot</div>
+      <div class="node blocks">Blocks</div>
+      <div class="node cars">Cars</div>
+
+      <div class="node robot-x">Robot X</div>
+      <div class="node mini-bot">Mini Bot</div>
+
+      <div class="node city">City Block</div>
+      <div class="node space">Space Block</div>
+
+      <div class="node racing">Racing Car</div>
 
     </div>
 
+  </section>
 
-    <div class="graph-area">
+  <!-- PATH -->
+  <section class="path-card">
 
-        <div class="graph-node category n1">
-            🤖 หุ่นยนต์
-        </div>
-
-        <div class="graph-node product n2">
-            Robot X
-        </div>
-
-        <div class="graph-node product n3">
-            Mini Bot
-        </div>
-
-
-        <div class="graph-node category n4">
-            🧩 ตัวต่อ
-        </div>
-
-        <div class="graph-node product n5">
-            City Block
-        </div>
-
-        <div class="graph-node product n6">
-            Space Block
-        </div>
-
-
-        <div class="graph-node category n7">
-            🚗 รถ
-        </div>
-
-        <div class="graph-node product n8">
-            Racing Car
-        </div>
-
-
-        <svg
-            class="edges"
-            viewBox="0 0 1000 520"
-            preserveAspectRatio="none">
-
-            <line
-                x1="160"
-                y1="110"
-                x2="370"
-                y2="90">
-            </line>
-
-            <line
-                x1="160"
-                y1="110"
-                x2="370"
-                y2="180">
-            </line>
-
-            <line
-                x1="160"
-                y1="360"
-                x2="370"
-                y2="330">
-            </line>
-
-            <line
-                x1="160"
-                y1="360"
-                x2="370"
-                y2="420">
-            </line>
-
-            <line
-                x1="680"
-                y1="235"
-                x2="850"
-                y2="235">
-            </line>
-
-        </svg>
-
+    <div>
+      <p class="tag">EXAMPLE PATH</p>
+      <h2>ตัวอย่าง Path</h2>
     </div>
 
-
-    <div class="math-box">
-
-        <h2>
-            Adjacency List
-        </h2>
-
-        <pre id="adjacency"></pre>
-
-        <p id="path-result"></p>
-
-        <button
-            class="btn"
-            onclick="runDFS()">
-
-            แสดง Path ด้วย DFS
-
-        </button>
-
+    <div class="path">
+      Toy Store
+      <span>→</span>
+      Robot
+      <span>→</span>
+      Robot X
     </div>
+
+    <p>
+      เส้นทางนี้แสดงการเดินจากร้าน Toy Store
+      ผ่านหมวดหมู่ Robot ไปยังสินค้า Robot X
+    </p>
+
+  </section>
+
+  <!-- ADJACENCY LIST -->
+  <section class="adj-card">
+
+    <div class="section-title">
+      <div>
+        <p class="tag">JAVASCRIPT DATA</p>
+        <h2>Adjacency List</h2>
+      </div>
+    </div>
+
+    <pre id="adjacency"></pre>
+
+  </section>
 
 </main>
-
-
-<footer>
-    ToyVerse © 2026
-</footer>
-
 
 <script src="script.js"></script>
 

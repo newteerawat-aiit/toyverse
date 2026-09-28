@@ -683,3 +683,217 @@ footer {
     }
 
 }
+/* ===== GRAPH PAGE ===== */
+
+.graph-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  margin: 5px 0;
+}
+
+.page-header p {
+  color: #777;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.graph-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.info-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.info-card strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.info-card span {
+  color: #777;
+}
+
+.graph-card,
+.path-card,
+.adj-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  margin: 3px 0;
+}
+
+.counter {
+  background: #f2f2f2;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.network {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 15px;
+}
+
+.network svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.network line {
+  stroke: #999;
+  stroke-width: 2;
+}
+
+.node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 11px 15px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  white-space: nowrap;
+}
+
+/* ตำแหน่ง Node */
+
+.store {
+  left: 50%;
+  top: 16%;
+}
+
+.robot {
+  left: 24.5%;
+  top: 44%;
+}
+
+.blocks {
+  left: 50%;
+  top: 44%;
+}
+
+.cars {
+  left: 75.5%;
+  top: 44%;
+}
+
+.robot-x {
+  left: 13.3%;
+  top: 78%;
+}
+
+.mini-bot {
+  left: 33.3%;
+  top: 78%;
+}
+
+.city {
+  left: 50%;
+  top: 78%;
+}
+
+.space {
+  left: 61%;
+  top: 78%;
+}
+
+.racing {
+  left: 86.7%;
+  top: 78%;
+}
+
+.path {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.path span {
+  color: #888;
+  font-size: 20px;
+}
+
+.path-card p:last-child {
+  color: #777;
+}
+
+.adj-card pre {
+  background: #171717;
+  color: #eee;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+  line-height: 1.7;
+}
+
+/* มือถือ */
+
+@media (max-width: 700px) {
+
+  .graph-info {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
+  }
+
+  .network {
+    height: 450px;
+  }
+
+  .node {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .section-title {
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+}
