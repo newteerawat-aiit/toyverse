@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ToyVerse | สินค้า</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🧸 ToyVerse
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            หน้าหลัก
+        </a>
+
+        <a class="active" href="products.html">
+            สินค้า
+        </a>
+
+        <a href="graph.html">
+            Toy Graph
+        </a>
+
+        <a href="tree.html">
+            Toy Tree
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-title">
+
+        <span class="badge">
+            Product Catalog
+        </span>
+
+        <h1>
+            สินค้าของเรา
+        </h1>
+
+        <p>
+            เลือกดูของเล่นตามหมวดหมู่
+        </p>
+
+    </section>
+
+
+    <div class="filter">
+
+        <button
+            class="filter-btn active-filter"
+            onclick="filterProducts('all', this)">
+            ทั้งหมด
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterProducts('robot', this)">
+            🤖 หุ่นยนต์
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterProducts('block', this)">
+            🧩 ตัวต่อ
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterProducts('car', this)">
+            🚗 รถ
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterProducts('game', this)">
+            🎮 เกม
+        </button>
+
+    </div>
+
+
+    <section
+        id="product-list"
+        class="product-grid">
+    </section>
+
+</main>
+
+
+<footer>
+    ToyVerse © 2026
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

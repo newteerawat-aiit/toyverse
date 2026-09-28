@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ToyVerse | Tree</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🧸 ToyVerse
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            หน้าหลัก
+        </a>
+
+        <a href="products.html">
+            สินค้า
+        </a>
+
+        <a href="graph.html">
+            Toy Graph
+        </a>
+
+        <a class="active" href="tree.html">
+            Toy Tree
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-title">
+
+        <span class="badge">
+            Tree Structure
+        </span>
+
+        <h1>
+            โครงสร้าง Toy Tree
+        </h1>
+
+        <p>
+            โครงสร้างหมวดหมู่สินค้าแบบลำดับชั้น
+        </p>
+
+    </section>
+
+
+    <div class="tree-box">
+
+        <!-- ROOT -->
+
+        <div class="tree-root">
+
+            🧸 Toy Store
+
+            <small>
+                Root
+            </small>
+
+        </div>
+
+
+        <div class="tree-level">
+
+
+            <!-- หุ่นยนต์ -->
+
+            <div class="tree-branch">
+
+                <div class="tree-node parent">
+
+                    🤖 หุ่นยนต์
+
+                    <small>
+                        Parent
+                    </small>
+
+                </div>
+
+                <div class="children">
+
+                    <span>
+
+                        Robot X
+
+                        <small>
+                            Leaf
+                        </small>
+
+                    </span>
+
+                    <span>
+
+                        Mini Bot
+
+                        <small>
+                            Leaf
+                        </small>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ตัวต่อ -->
+
+            <div class="tree-branch">
+
+                <div class="tree-node parent">
+
+                    🧩 ตัวต่อ
+
+                    <small>
+                        Parent
+                    </small>
+
+                </div>
+
+                <div class="children">
+
+                    <span>
+
+                        City Block
+
+                        <small>
+                            Leaf
+                        </small>
+
+                    </span>
+
+                    <span>
+
+                        Space Block
+
+                        <small>
+                            Leaf
+                        </small>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- รถ -->
+
+            <div class="tree-branch">
+
+                <div class="tree-node parent">
+
+                    🚗 รถของเล่น
+
+                    <small>
+                        Parent
+                    </small>
+
+                </div>
+
+                <div class="children">
+
+                    <span>
+
+                        Racing Car
+
+                        <small>
+                            Leaf
+                        </small>
+
+                    </span>
+
+                    <span>
+
+                        Mini Truck
+
+                        <small>
+                            Leaf
+                        </small>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="math-box">
+
+        <h2>
+            ตัวอย่าง Path
+        </h2>
+
+        <p>
+
+            <b>
+                Toy Store → หุ่นยนต์ → Robot X
+            </b>
+
+        </p>
+
+        <p>
+
+            หมายถึงการเดินจาก Root
+            ไปยัง Parent
+            และไปยัง Leaf
+
+        </p>
+
+    </div>
+
+
+    <div class="math-box">
+
+        <h2>
+            Tree Traversal
+        </h2>
+
+        <button
+            class="btn"
+            onclick="preorder()">
+
+            Preorder Traversal
+
+        </button>
+
+        <p id="traversal-result">
+
+            กดปุ่มเพื่อดูการเดิน Tree
+
+        </p>
+
+    </div>
+
+</main>
+
+
+<footer>
+    ToyVerse © 2026
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

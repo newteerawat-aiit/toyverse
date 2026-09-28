@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ToyVerse | Graph</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🧸 ToyVerse
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            หน้าหลัก
+        </a>
+
+        <a href="products.html">
+            สินค้า
+        </a>
+
+        <a class="active" href="graph.html">
+            Toy Graph
+        </a>
+
+        <a href="tree.html">
+            Toy Tree
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-title">
+
+        <span class="badge">
+            Graph Theory
+        </span>
+
+        <h1>
+            Toy Graph
+        </h1>
+
+        <p>
+            กราฟแสดงความสัมพันธ์ระหว่างหมวดหมู่กับสินค้า
+        </p>
+
+    </section>
+
+
+    <div class="math-box">
+
+        <h2>
+            องค์ประกอบของ Graph
+        </h2>
+
+        <p>
+            <b>Vertex:</b>
+            จุดยอด เช่น หมวดหมู่หรือสินค้า
+        </p>
+
+        <p>
+            <b>Edge:</b>
+            เส้นเชื่อมระหว่าง Vertex
+        </p>
+
+        <p>
+            <b>Path:</b>
+            เส้นทางที่เดินผ่าน Vertex และ Edge
+        </p>
+
+    </div>
+
+
+    <div class="graph-area">
+
+        <div class="graph-node category n1">
+            🤖 หุ่นยนต์
+        </div>
+
+        <div class="graph-node product n2">
+            Robot X
+        </div>
+
+        <div class="graph-node product n3">
+            Mini Bot
+        </div>
+
+
+        <div class="graph-node category n4">
+            🧩 ตัวต่อ
+        </div>
+
+        <div class="graph-node product n5">
+            City Block
+        </div>
+
+        <div class="graph-node product n6">
+            Space Block
+        </div>
+
+
+        <div class="graph-node category n7">
+            🚗 รถ
+        </div>
+
+        <div class="graph-node product n8">
+            Racing Car
+        </div>
+
+
+        <svg
+            class="edges"
+            viewBox="0 0 1000 520"
+            preserveAspectRatio="none">
+
+            <line
+                x1="160"
+                y1="110"
+                x2="370"
+                y2="90">
+            </line>
+
+            <line
+                x1="160"
+                y1="110"
+                x2="370"
+                y2="180">
+            </line>
+
+            <line
+                x1="160"
+                y1="360"
+                x2="370"
+                y2="330">
+            </line>
+
+            <line
+                x1="160"
+                y1="360"
+                x2="370"
+                y2="420">
+            </line>
+
+            <line
+                x1="680"
+                y1="235"
+                x2="850"
+                y2="235">
+            </line>
+
+        </svg>
+
+    </div>
+
+
+    <div class="math-box">
+
+        <h2>
+            Adjacency List
+        </h2>
+
+        <pre id="adjacency"></pre>
+
+        <p id="path-result"></p>
+
+        <button
+            class="btn"
+            onclick="runDFS()">
+
+            แสดง Path ด้วย DFS
+
+        </button>
+
+    </div>
+
+</main>
+
+
+<footer>
+    ToyVerse © 2026
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
